@@ -9,7 +9,6 @@ Bootstrap, the world’s most popular framework for building responsive, mobile-
 # Starter template
 Be sure to have your pages set up with the latest design and development standards. That means using an HTML5 doctype and including a viewport meta tag for proper responsive behaviors. Put it all together and your pages should look like this:
 
-Copy
 <!doctype html>
 <html lang="en">
   <head>
@@ -38,13 +37,13 @@ Containers are the most basic layout element in Bootstrap and are required when 
 
 While containers can be nested, most layouts do not require a nested container.
 
-Copy
 <div class="container">
   <!-- Content here -->
 </div>
+
 Use .container-fluid for a full width container, spanning the entire width of the viewport.
 
-Copy
+
 <div class="container-fluid">
   ...
 </div>
@@ -108,12 +107,7 @@ Utilize breakpoint-specific column classes for easy column sizing without an exp
 Equal-width
 For example, here are two grid layouts that apply to every device and viewport, from xs to xl. Add any number of unit-less classes for each breakpoint you need and every column will be the same width.
 
-1 of 2
-2 of 2
-1 of 3
-2 of 3
-3 of 3
-Copy
+
 <div class="container">
   <div class="row">
     <div class="col">
@@ -137,11 +131,7 @@ Copy
 </div>
 Equal-width columns can be broken into multiple lines, but there was a Safari flexbox bug that prevented this from working without an explicit flex-basis or border. There are workarounds for older browser versions, but they shouldn’t be necessary if you’re up-to-date.
 
-Column
-Column
-Column
-Column
-Copy
+
 <div class="container">
   <div class="row">
     <div class="col">Column</div>
@@ -154,13 +144,6 @@ Copy
 Setting one column width
 Auto-layout for flexbox grid columns also means you can set the width of one column and have the sibling columns automatically resize around it. You may use predefined grid classes (as shown below), grid mixins, or inline widths. Note that the other columns will resize no matter the width of the center column.
 
-1 of 3
-2 of 3 (wider)
-3 of 3
-1 of 3
-2 of 3 (wider)
-3 of 3
-Copy
 <div class="container">
   <div class="row">
     <div class="col">
@@ -188,13 +171,6 @@ Copy
 Variable width content
 Use col-{breakpoint}-auto classes to size columns based on the natural width of their content.
 
-1 of 3
-Variable width content
-3 of 3
-1 of 3
-Variable width content
-3 of 3
-Copy
 <div class="container">
   <div class="row justify-content-md-center">
     <div class="col col-lg-2">
@@ -222,11 +198,6 @@ Copy
 Equal-width multi-row
 Create equal-width columns that span multiple rows by inserting a .w-100 where you want the columns to break to a new line. Make the breaks responsive by mixing the .w-100 with some responsive display utilities.
 
-col
-col
-col
-col
-Copy
 <div class="row">
   <div class="col">col</div>
   <div class="col">col</div>
@@ -240,13 +211,7 @@ Bootstrap’s grid includes five tiers of predefined classes for building comple
 All breakpoints
 For grids that are the same from the smallest of devices to the largest, use the .col and .col-* classes. Specify a numbered class when you need a particularly sized column; otherwise, feel free to stick to .col.
 
-col
-col
-col
-col
-col-8
-col-4
-Copy
+
 <div class="row">
   <div class="col">col</div>
   <div class="col">col</div>
